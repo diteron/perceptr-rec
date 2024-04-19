@@ -24,4 +24,3 @@ private:
     std::mt19937 random_;
     std::uniform_int_distribution<> distribution_;
 };
-

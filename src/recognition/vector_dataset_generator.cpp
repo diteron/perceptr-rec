@@ -51,7 +51,7 @@ VectorDataSetGenerator::generateDataSet(size_t classCount, size_t vectorsCountFo
 
 bool VectorDataSetGenerator::isEnoughRandomVectors(size_t classCount, size_t vectorsCountForClass, size_t vectorsDimension) const
 {
-    assert(maxVectorValue_ > minVectorValue_ && "Max value for vector is larger than min value!");
+    assert(maxVectorValue_ > minVectorValue_ && "Min value for vector is larger than max value!");
 
     int maxRandomVectors = maxVectorValue_ - minVectorValue_ + 1;
     return (classCount * vectorsCountForClass <= std::pow(maxRandomVectors, vectorsDimension));
