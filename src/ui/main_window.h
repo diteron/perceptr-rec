@@ -55,7 +55,7 @@ private slots:
     void classificationButtonClicked();
 
 private:
-    bool generateDataSet();
+    [[nodiscard]] bool generateDataSet();
     void printLearningResult();
     void printLearningDataSet();
     void printSumFunctions();
